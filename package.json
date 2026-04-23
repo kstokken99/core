@@ -1,0 +1,21 @@
+{
+  "name": "core",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kstokken99/core.git"
+  },
+  "keywords": [],
+  "author": "@a.ivanov",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kstokken99/core/issues"
+  },
+  "homepage": "https://github.com/kstokken99/core#readme"
+}
