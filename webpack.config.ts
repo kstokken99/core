@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 const mode = "development";
 const paths = {
   entry: path.resolve(__dirname, "src", "index.ts"),
-  build: path.resolve(__dirname, "build"),
+  build: path.resolve(__dirname, "dist"),
   html: path.resolve(__dirname, "public", "index.html"),
 };
 const isDev = mode === "development";
