@@ -8,4 +8,5 @@ export interface BuildOptions {
   mode: "development" | "production";
   paths: BuildPaths;
   isDev: boolean;
+  port: number;
 }

@@ -14,11 +14,13 @@ const paths = {
   html: path.resolve(__dirname, "public", "index.html"),
 };
 const isDev = mode === "development";
+const port = 3000;
 
 const config: webpack.Configuration = buildWebpackConfig({
   mode,
   paths,
   isDev,
+  port,
 });
 
 export default config;
