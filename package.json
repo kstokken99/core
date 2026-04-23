@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/kstokken99/core#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^5.6.7",
     "webpack": "^5.106.2",
     "webpack-cli": "^7.0.2"
   }
