@@ -1,0 +1,15 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "rootDir": "./",
+        "composite": true,
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "types": [
+            "node"
+        ]
+    },
+    "include": [
+        "webpack.config.ts"
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "noImplicitAny": true,
+        "module": "esnext",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "moduleResolution": "bundler",
+        "target": "esnext",
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "types": [
+            "node"
+        ],
+    },
+    "include": [
+        "src/**/*",
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ]
+}
