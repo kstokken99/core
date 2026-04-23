@@ -21,5 +21,5 @@ export const buildWebpackConfig = (
   },
   resolve: buildResolvers(),
   devtool: options.isDev ? "inline-source-map" : undefined,
-  devServer: buildDevServer(options),
+  devServer: options.isDev ? buildDevServer(options) : undefined,
 });

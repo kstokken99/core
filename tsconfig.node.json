@@ -5,6 +5,7 @@
         "composite": true,
         "module": "esnext",
         "moduleResolution": "bundler",
+        "sourceMap": false,
         "types": [
             "node"
         ]

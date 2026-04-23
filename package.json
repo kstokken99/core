@@ -5,15 +5,19 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "NODE_OPTIONS=\"--import tsx/esm\" webpack",
     "dev": "NODE_OPTIONS=\"--import tsx/esm\" webpack serve",
+    "build:dev": "NODE_OPTIONS=\"--import tsx/esm\" webpack --env mode=development",
+    "build:prod": "NODE_OPTIONS=\"--import tsx/esm\" webpack --env mode=production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kstokken99/core.git"
   },
-  "keywords": [],
+  "keywords": [
+    "webpack",
+    "typescript"
+  ],
   "author": "@a.ivanov",
   "license": "ISC",
   "bugs": {
