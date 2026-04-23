@@ -10,6 +10,7 @@
         ]
     },
     "include": [
-        "webpack.config.ts"
+        "webpack.config.ts",
+        "config/**/*"
     ]
 }
