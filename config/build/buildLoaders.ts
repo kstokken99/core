@@ -7,7 +7,15 @@ export const buildLoaders = (options: BuildOptions): webpack.RuleSetRule[] => {
     test: /\.s[ac]ss$/i,
     use: [
       options.isDev ? "style-loader" : MiniCssExtractPlugin.loader,
-      "css-loader",
+      {
+        loader: "css-loader",
+        options: {
+          modules: {
+            auto: (path: string) => Boolean(path.includes(".module.")),
+            localIdentName: options.isDev ? "[path][name]__[local]" : "[hash]",
+          },
+        },
+      },
       "sass-loader",
     ],
   };
