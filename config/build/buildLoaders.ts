@@ -11,6 +11,7 @@ export const buildLoaders = (options: BuildOptions): webpack.RuleSetRule[] => {
         loader: "css-loader",
         options: {
           modules: {
+            namedExport: false,
             auto: (path: string) => Boolean(path.includes(".module.")),
             localIdentName: options.isDev ? "[path][name]__[local]" : "[hash]",
           },
