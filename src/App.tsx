@@ -1,7 +1,6 @@
-import { Suspense } from "react";
-import { Link, Route, Routes } from "react-router-dom";
-import { MainPageAsync, AboutPageAsync } from "@/pages";
+import { Link } from "react-router-dom";
 import { useTheme } from "@/providers/theme";
+import { AppRouter } from "@/providers/router";
 import { cn } from "@/utils";
 
 export const App = () => {
@@ -9,15 +8,10 @@ export const App = () => {
 
   return (
     <div className={cn("app", theme)}>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/" element={<MainPageAsync />} />
-          <Route path="/about" element={<AboutPageAsync />} />
-        </Routes>
-      </Suspense>
       <Link to="/">Main</Link>
       <Link to="/about">About</Link>
       <button onClick={toggleTheme}>Toggle theme</button>
+      <AppRouter />
     </div>
   );
 };
