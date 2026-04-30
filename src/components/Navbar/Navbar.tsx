@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { useTheme } from "@/providers/theme";
+import { Link } from "@/components/ui";
 import { AppRoutes, routePaths } from "@/constants";
 import { cn } from "@/utils";
 
