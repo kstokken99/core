@@ -12,7 +12,7 @@ interface NavbarProps {
 export const Navbar = ({ className }: NavbarProps) => {
   return (
     <nav className={cn(styles.root, className)}>
-      <div className={cn(styles.links)}>
+      <div className={styles.links}>
         <Link to={routePaths.main}>{AppRoutes.MAIN}</Link>
         <Link to={routePaths.about}>{AppRoutes.ABOUT}</Link>
       </div>
