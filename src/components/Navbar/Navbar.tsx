@@ -1,5 +1,5 @@
 import { useTheme } from "@/providers/theme";
-import { Link } from "@/components/ui";
+import { Link, Button } from "@/components/ui";
 import { AppRoutes, routePaths } from "@/constants";
 import { cn } from "@/utils";
 
@@ -17,7 +17,7 @@ export const Navbar = ({ className }: NavbarProps) => {
         <Link to={routePaths.main}>{AppRoutes.MAIN}</Link>
         <Link to={routePaths.about}>{AppRoutes.ABOUT}</Link>
       </div>
-      <button onClick={toggleTheme}>Toggle theme</button>
+      <Button onClick={toggleTheme}>Toggle theme</Button>
     </nav>
   );
 };
