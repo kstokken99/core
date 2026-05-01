@@ -1,6 +1,6 @@
 import { useTheme } from "@/providers/theme";
 import { AppRouter } from "@/providers/router";
-import { Navbar } from "@/components";
+import { Navbar, Sidebar } from "@/components";
 import { cn } from "@/utils";
 
 export const App = () => {
@@ -9,7 +9,10 @@ export const App = () => {
   return (
     <div className={cn("app", theme)}>
       <Navbar />
-      <AppRouter />
+      <div className="content-page">
+        <Sidebar />
+        <AppRouter />
+      </div>
     </div>
   );
 };
