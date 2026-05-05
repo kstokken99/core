@@ -1,8 +1,7 @@
 import { useTranslation } from "react-i18next";
+import { Select } from "@/components/ui";
 import { LOCAL_STORAGE_LANG_KEY } from "@/constants";
 import { cn } from "@/utils";
-
-import styles from "./LangSwitcher.module.scss";
 
 interface LangSwitcherProps {
   className?: string;
@@ -14,15 +13,17 @@ export const LangSwitcher = ({ className }: LangSwitcherProps) => {
     i18n.changeLanguage(e.target.value);
   };
   const defaultValue = localStorage.getItem(LOCAL_STORAGE_LANG_KEY) || "en";
+  const langOptions = [
+    { value: "en", label: t("en") },
+    { value: "ru", label: t("ru") },
+  ];
 
   return (
-    <select
+    <Select
+      className={cn(className)}
       onChange={langHandler}
-      className={cn(styles.root, className)}
-      defaultValue={defaultValue}
-    >
-      <option value="en">{t("en")}</option>
-      <option value="ru">{t("ru")}</option>
-    </select>
+      value={defaultValue}
+      options={langOptions}
+    />
   );
 };
