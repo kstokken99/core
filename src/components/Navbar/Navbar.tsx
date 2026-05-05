@@ -1,4 +1,4 @@
-import { ThemeSwither } from "@/components";
+import { ThemeSwither, LangSwitcher } from "@/components";
 import { Link } from "@/components/ui";
 import { AppRoutes, routePaths } from "@/constants";
 import { cn } from "@/utils";
@@ -16,7 +16,10 @@ export const Navbar = ({ className }: NavbarProps) => {
         <Link to={routePaths.main}>{AppRoutes.MAIN}</Link>
         <Link to={routePaths.about}>{AppRoutes.ABOUT}</Link>
       </div>
-      <ThemeSwither />
+      <div className={styles.controls}>
+        <ThemeSwither />
+        <LangSwitcher />
+      </div>
     </nav>
   );
 };

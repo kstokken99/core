@@ -1,4 +1,5 @@
 export const LOCAL_STORAGE_THEME_KEY = "app-theme";
+export const LOCAL_STORAGE_LANG_KEY = "i18nextLng";
 
 export enum AppTheme {
   LIGHT = "light",

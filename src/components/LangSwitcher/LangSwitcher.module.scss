@@ -1,0 +1,12 @@
+.root {
+    background: var(--bg-color);
+    border: 1px solid var(--primary-color);
+    padding: var(--padding-sm);
+    color: var(--primary-color);
+    outline: none;
+    cursor: pointer;
+
+    & option {
+        background: var(--bg-color);
+    }
+}
