@@ -1,9 +1,9 @@
-import { ThemeSwither, LangSwitcher } from "@/components";
-import { Link } from "@/components/ui";
-import { AppRoutes, routePaths } from "@/constants";
-import { cn } from "@/utils";
+import { ThemeSwither, LangSwitcher } from '@/components';
+import { Link } from '@/components/ui';
+import { AppRoutes, routePaths } from '@/constants';
+import { cn } from '@/utils';
 
-import styles from "./Navbar.module.scss";
+import styles from './Navbar.module.scss';
 
 interface NavbarProps {
   className?: string;

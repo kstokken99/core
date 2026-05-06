@@ -4,6 +4,7 @@ import reactPlugin from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import globals from "globals";
 import type { ConfigArray } from "typescript-eslint";
+import prettier from "eslint-config-prettier";
 
 const config: ConfigArray = tseslint.config(
   {
@@ -50,6 +51,7 @@ const config: ConfigArray = tseslint.config(
       "no-console": "warn",
     },
   },
+  prettier,
 );
 
 export default config;

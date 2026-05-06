@@ -1,20 +1,20 @@
-@use "reset";
-@use "global";
-@use "themes/light";
-@use "themes/dark";
+@use 'reset';
+@use 'global';
+@use 'themes/light';
+@use 'themes/dark';
 
 .app {
-    min-height: 100vh;
-    background-color: var(--bg-color);
-    color: var(--primary-color);
-    font: var(--font-md);
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  font: var(--font-md);
 }
 
 .content-page {
-    display: flex;
+  display: flex;
 }
 
 .page-wrapper {
-    flex-grow: 1;
-    padding: var(--padding-lg);
+  flex-grow: 1;
+  padding: var(--padding-lg);
 }

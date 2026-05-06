@@ -1,12 +1,12 @@
 .root {
-    width: var(--sidebar-width-close);
-    height: calc(100vh - var(--navbar-height));
-    padding: var(--padding-md);
-    background-color: var(--bg-color);
-    transition: width 0.3s ease;
-    border-right: 1px solid var(--primary-color);
+  width: var(--sidebar-width-close);
+  height: calc(100vh - var(--navbar-height));
+  padding: var(--padding-md);
+  background-color: var(--bg-color);
+  transition: width 0.3s ease;
+  border-right: 1px solid var(--primary-color);
 }
 
 .open {
-    width: var(--sidebar-width-open);
+  width: var(--sidebar-width-open);
 }

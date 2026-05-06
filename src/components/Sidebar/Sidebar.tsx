@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { Button } from "@/components/ui";
-import { cn } from "@/utils";
+import { useState } from 'react';
+import { Button } from '@/components/ui';
+import { cn } from '@/utils';
 
-import styles from "./Sidebar.module.scss";
+import styles from './Sidebar.module.scss';
 
 interface SidebarProps {
   className?: string;

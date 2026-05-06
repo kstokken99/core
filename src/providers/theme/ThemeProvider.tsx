@@ -1,6 +1,6 @@
-import { useMemo, useState } from "react";
-import { ThemeContext } from "./ThemeContext";
-import { AppTheme, LOCAL_STORAGE_THEME_KEY } from "../../constants";
+import { useMemo, useState } from 'react';
+import { ThemeContext } from './ThemeContext';
+import { AppTheme, LOCAL_STORAGE_THEME_KEY } from '../../constants';
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const initialTheme =

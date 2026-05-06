@@ -1,12 +1,12 @@
 .root {
-    padding: var(--padding-sm);
-    background: var(--bg-color);
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
-    outline: none;
-    cursor: pointer;
+  padding: var(--padding-sm);
+  background: var(--bg-color);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  outline: none;
+  cursor: pointer;
 
-    & option {
-        background: var(--bg-color);
-    }
+  & option {
+    background: var(--bg-color);
+  }
 }

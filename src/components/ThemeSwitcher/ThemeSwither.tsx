@@ -1,10 +1,10 @@
-import { useTheme } from "@/providers/theme";
-import { Button } from "@/components/ui";
-import { AppTheme } from "@/constants";
-import { cn } from "@/utils";
+import { useTheme } from '@/providers/theme';
+import { Button } from '@/components/ui';
+import { AppTheme } from '@/constants';
+import { cn } from '@/utils';
 
-import MoonIcon from "@/assets/icons/moon.svg";
-import SunIcon from "@/assets/icons/sun.svg";
+import MoonIcon from '@/assets/icons/moon.svg';
+import SunIcon from '@/assets/icons/sun.svg';
 
 interface ThemeSwitherProps {
   className?: string;

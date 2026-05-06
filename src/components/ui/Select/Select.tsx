@@ -1,10 +1,10 @@
-import { cn } from "@/utils";
+import { cn } from '@/utils';
 
-import styles from "./Select.module.scss";
+import styles from './Select.module.scss';
 
 interface SelectProps extends Omit<
   React.SelectHTMLAttributes<HTMLSelectElement>,
-  "onChange"
+  'onChange'
 > {
   className?: string;
   onChange: (e: React.ChangeEvent<HTMLSelectElement, Element>) => void;

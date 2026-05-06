@@ -1,7 +1,7 @@
-import { LinkProps, Link as RouterLink, useLocation } from "react-router-dom";
-import { cn } from "@/utils";
+import { LinkProps, Link as RouterLink, useLocation } from 'react-router-dom';
+import { cn } from '@/utils';
 
-import styles from "./Link.module.scss";
+import styles from './Link.module.scss';
 
 interface AppLinkProps extends LinkProps {
   to: string;
@@ -17,9 +17,9 @@ export const Link: React.FC<AppLinkProps> = ({
 }) => {
   const { pathname } = useLocation();
   const isActive =
-    to === "/"
-      ? pathname === "/"
-      : pathname === to || pathname.startsWith(to + "/");
+    to === '/'
+      ? pathname === '/'
+      : pathname === to || pathname.startsWith(to + '/');
 
   return (
     <RouterLink

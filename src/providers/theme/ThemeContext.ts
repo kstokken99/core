@@ -1,5 +1,5 @@
-import { createContext, Dispatch, SetStateAction } from "react";
-import { AppTheme } from "../../constants";
+import { createContext, Dispatch, SetStateAction } from 'react';
+import { AppTheme } from '../../constants';
 
 interface ThemeContextProps {
   theme: string;

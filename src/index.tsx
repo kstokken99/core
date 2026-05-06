@@ -1,13 +1,13 @@
-import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "./providers/theme";
-import { App } from "./App";
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import { ThemeProvider } from './providers/theme';
+import { App } from './App';
 
-import "@/lib/i18n";
+import '@/lib/i18n';
 
-import "./styles/index.scss";
+import './styles/index.scss';
 
-createRoot(document.getElementById("root")!).render(
+createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
     <ThemeProvider>
       <App />

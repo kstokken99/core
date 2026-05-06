@@ -1,7 +1,11 @@
 import type { Config } from "stylelint";
 
 const config: Config = {
-  extends: ["stylelint-config-standard", "stylelint-config-standard-scss"],
+  extends: [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss",
+  ],
   plugins: ["stylelint-order"],
   rules: {
     "order/properties-order": [

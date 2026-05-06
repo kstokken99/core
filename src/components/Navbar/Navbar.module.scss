@@ -1,18 +1,18 @@
 .root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--navbar-height);
+  padding: var(--padding-md);
+  border-bottom: 1px solid var(--primary-color);
+
+  .links {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: var(--navbar-height);
-    padding: var(--padding-md);
-    border-bottom: 1px solid var(--primary-color);
+    gap: var(--gap-md);
+  }
 
-    .links {
-        display: flex;
-        gap: var(--gap-md);
-    }
-
-    .controls {
-        display: flex;
-        gap: var(--gap-md);
-    }
+  .controls {
+    display: flex;
+    gap: var(--gap-md);
+  }
 }
