@@ -1,10 +1,10 @@
 .root {
-    height: calc(100vh - var(--navbar-height));
     width: var(--sidebar-width-close);
-    background-color: var(--bg-color);
-    border-right: 1px solid var(--primary-color);
+    height: calc(100vh - var(--navbar-height));
     padding: var(--padding-md);
+    background-color: var(--bg-color);
     transition: width 0.3s ease;
+    border-right: 1px solid var(--primary-color);
 }
 
 .open {

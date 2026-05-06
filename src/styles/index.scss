@@ -1,13 +1,13 @@
 @use "reset";
 @use "global";
-@use "themes/light.scss";
-@use "themes/dark.scss";
+@use "themes/light";
+@use "themes/dark";
 
 .app {
-    font: var(--font-md);
+    min-height: 100vh;
     background-color: var(--bg-color);
     color: var(--primary-color);
-    min-height: 100vh;
+    font: var(--font-md);
 }
 
 .content-page {
