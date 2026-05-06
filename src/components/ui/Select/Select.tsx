@@ -13,7 +13,6 @@ interface SelectProps extends Omit<
 
 export const Select: React.FC<SelectProps> = ({
   className,
-  defaultValue,
   value,
   onChange,
   options,
