@@ -1,8 +1,8 @@
+import { Suspense } from 'react'
 import { useTheme } from '@/providers/theme'
 import { AppRouter } from '@/providers/router'
 import { Navbar, Sidebar } from '@/components'
 import { cn } from '@/utils'
-import { Suspense } from 'react'
 
 export const App = () => {
   const { theme } = useTheme()

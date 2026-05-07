@@ -1,0 +1,9 @@
+.root {
+  font: var(--font-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-lg);
+  height: 100vh;
+}

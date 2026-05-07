@@ -1,5 +1,8 @@
 {
   "en": "en",
   "ru": "ru",
-  "NotFoundPage": "Страница не найдена"
+  "NotFoundPage": "Страница не найдена",
+  "Something went wrong": "Что-то пошло не так",
+  "Try refreshing the page": "Попробуйте обновить страницу",
+  "Reload": "Перезагрузить"
 }

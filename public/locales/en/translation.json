@@ -1,5 +1,8 @@
 {
   "en": "en",
   "ru": "ru",
-  "NotFoundPage": "Page not found"
+  "NotFoundPage": "Page not found",
+  "Something went wrong": "Something went wrong",
+  "Try refreshing the page": "Try refreshing the page",
+  "Reload": "Reload"
 }
