@@ -1,6 +1,6 @@
 import { RouteProps } from 'react-router-dom'
 import { AppRoutes, routePaths } from '@/constants'
-import { AboutPageAsync, MainPageAsync } from '@/pages'
+import { AboutPageAsync, MainPageAsync, NotFoundPage } from '@/pages'
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
   [AppRoutes.MAIN]: {
@@ -10,5 +10,9 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
   [AppRoutes.ABOUT]: {
     path: routePaths[AppRoutes.ABOUT],
     element: <AboutPageAsync />,
+  },
+  [AppRoutes.NOT_FOUND]: {
+    path: routePaths[AppRoutes.NOT_FOUND],
+    element: <NotFoundPage />,
   },
 }
