@@ -1,14 +1,14 @@
-import { cn } from '@/utils';
+import { cn } from '@/utils'
 
-import styles from './Select.module.scss';
+import styles from './Select.module.scss'
 
 interface SelectProps extends Omit<
   React.SelectHTMLAttributes<HTMLSelectElement>,
   'onChange'
 > {
-  className?: string;
-  onChange: (e: React.ChangeEvent<HTMLSelectElement, Element>) => void;
-  options: { value: string; label: string }[];
+  className?: string
+  onChange: (e: React.ChangeEvent<HTMLSelectElement, Element>) => void
+  options: { value: string; label: string }[]
 }
 
 export const Select: React.FC<SelectProps> = ({
@@ -31,5 +31,5 @@ export const Select: React.FC<SelectProps> = ({
         </option>
       ))}
     </select>
-  );
-};
+  )
+}

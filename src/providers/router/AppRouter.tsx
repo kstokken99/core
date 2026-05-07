@@ -1,6 +1,6 @@
-import { Suspense } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import { routeConfig } from './routeConfig';
+import { Suspense } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import { routeConfig } from './routeConfig'
 
 export const AppRouter = () => {
   return (
@@ -17,5 +17,5 @@ export const AppRouter = () => {
         />
       ))}
     </Routes>
-  );
-};
+  )
+}

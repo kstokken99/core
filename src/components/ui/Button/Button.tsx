@@ -1,9 +1,9 @@
-import { cn } from '@/utils';
+import { cn } from '@/utils'
 
-import styles from './Button.module.scss';
+import styles from './Button.module.scss'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  className?: string;
+  className?: string
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -15,5 +15,5 @@ export const Button: React.FC<ButtonProps> = ({
     <button className={cn(styles.root, className)} {...props}>
       {children}
     </button>
-  );
-};
+  )
+}

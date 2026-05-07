@@ -1,12 +1,12 @@
-import { LinkProps, Link as RouterLink, useLocation } from 'react-router-dom';
-import { cn } from '@/utils';
+import { LinkProps, Link as RouterLink, useLocation } from 'react-router-dom'
+import { cn } from '@/utils'
 
-import styles from './Link.module.scss';
+import styles from './Link.module.scss'
 
 interface AppLinkProps extends LinkProps {
-  to: string;
-  children: React.ReactNode;
-  className?: string;
+  to: string
+  children: React.ReactNode
+  className?: string
 }
 
 export const Link: React.FC<AppLinkProps> = ({
@@ -15,11 +15,11 @@ export const Link: React.FC<AppLinkProps> = ({
   className,
   ...props
 }) => {
-  const { pathname } = useLocation();
+  const { pathname } = useLocation()
   const isActive =
     to === '/'
       ? pathname === '/'
-      : pathname === to || pathname.startsWith(to + '/');
+      : pathname === to || pathname.startsWith(to + '/')
 
   return (
     <RouterLink
@@ -29,5 +29,5 @@ export const Link: React.FC<AppLinkProps> = ({
     >
       {children}
     </RouterLink>
-  );
-};
+  )
+}
