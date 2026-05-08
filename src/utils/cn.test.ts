@@ -1,4 +1,4 @@
-import { cn } from './cn'
+import { cn } from '@/utils'
 
 describe('cn', () => {
   // --- Базовые типы ---

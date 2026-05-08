@@ -16,8 +16,13 @@ export const Sidebar: React.FC<SidebarProps> = ({ className }) => {
   }
 
   return (
-    <aside className={cn(styles.root, { [styles.open]: isOpen }, className)}>
-      <Button onClick={toggleSidebar}>Toggle sidebar</Button>
+    <aside
+      data-testid="sidebar"
+      className={cn(styles.root, { [styles.open]: isOpen }, className)}
+    >
+      <Button data-testid="sidebar-toggle" onClick={toggleSidebar}>
+        Toggle sidebar
+      </Button>
     </aside>
   )
 }
