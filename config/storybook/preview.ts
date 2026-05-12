@@ -4,14 +4,26 @@ import { useEffect } from 'react'
 import '../../src/styles/index.scss'
 
 const preview: Preview = {
+  globalTypes: {
+    theme: {
+      description: 'Global theme',
+      defaultValue: 'light',
+      toolbar: {
+        title: 'Theme',
+        icon: 'circlehollow',
+        items: ['light', 'dark'],
+        dynamicTitle: true,
+      },
+    },
+  },
   decorators: [
-    (Story) => {
+    (Story, context) => {
+      const theme = context.globals.theme ?? 'light'
+
       useEffect(() => {
-        document.body.classList.add('app', 'light')
-        return () => {
-          document.body.classList.remove('app', 'light')
-        }
-      }, [])
+        document.body.classList.remove('app', 'light', 'dark')
+        document.body.classList.add('app', theme)
+      }, [theme])
 
       return Story()
     },
