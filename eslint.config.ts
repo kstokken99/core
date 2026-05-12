@@ -1,14 +1,15 @@
-import js from "@eslint/js";
-import tseslint from "typescript-eslint";
-import reactPlugin from "eslint-plugin-react";
-import reactHooks from "eslint-plugin-react-hooks";
-import globals from "globals";
-import type { ConfigArray } from "typescript-eslint";
-import prettier from "eslint-config-prettier";
+import js from '@eslint/js'
+import tseslint from 'typescript-eslint'
+import reactPlugin from 'eslint-plugin-react'
+import reactHooks from 'eslint-plugin-react-hooks'
+import globals from 'globals'
+import type { ConfigArray } from 'typescript-eslint'
+import prettier from 'eslint-config-prettier'
+import storybook from 'eslint-plugin-storybook'
 
 const config: ConfigArray = tseslint.config(
   {
-    ignores: ["dist/**", "build/**", "node_modules/**"],
+    ignores: ['dist/**', 'build/**', 'node_modules/**'],
   },
 
   js.configs.recommended,
@@ -16,10 +17,10 @@ const config: ConfigArray = tseslint.config(
   ...tseslint.configs.recommended,
 
   {
-    files: ["**/*.{ts,tsx}"],
+    files: ['**/*.{ts,tsx}'],
     plugins: {
       react: reactPlugin,
-      "react-hooks": reactHooks,
+      'react-hooks': reactHooks,
     },
     languageOptions: {
       parserOptions: {
@@ -32,26 +33,33 @@ const config: ConfigArray = tseslint.config(
     },
     settings: {
       react: {
-        version: "detect",
+        version: 'detect',
       },
     },
     rules: {
       ...reactPlugin.configs.recommended.rules,
-      "react/react-in-jsx-scope": "off",
-      "react/prop-types": "off",
+      'react/react-in-jsx-scope': 'off',
+      'react/prop-types': 'off',
 
       ...reactHooks.configs.recommended.rules,
 
-      "@typescript-eslint/no-unused-vars": [
-        "warn",
-        { argsIgnorePattern: "^_" },
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
+        { argsIgnorePattern: '^_' },
       ],
-      "@typescript-eslint/no-explicit-any": "warn",
+      '@typescript-eslint/no-explicit-any': 'warn',
 
-      "no-console": "warn",
+      'no-console': 'warn',
     },
   },
   prettier,
-);
 
-export default config;
+  {
+    files: ['**/*.{ts,tsx}'],
+    plugins: {
+      storybook,
+    },
+  },
+)
+
+export default config

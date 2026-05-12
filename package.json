@@ -17,7 +17,9 @@
     "format": "npm run prettier:fix && npm run lint:fix && npm run stylelint:fix",
     "unit": "NODE_OPTIONS=\"\" jest",
     "unit:watch": "NODE_OPTIONS=\"\" jest --watch",
-    "unit:coverage": "NODE_OPTIONS=\"\" jest --coverage"
+    "unit:coverage": "NODE_OPTIONS=\"\" jest --coverage",
+    "storybook": "storybook dev -p 6006 -c ./config/storybook",
+    "build-storybook": "storybook build -c ./config/storybook"
   },
   "repository": {
     "type": "git",
@@ -86,7 +88,13 @@
     "webpack": "^5.106.2",
     "webpack-bundle-analyzer": "^5.3.0",
     "webpack-cli": "^7.0.2",
-    "webpack-dev-server": "^5.2.3"
+    "webpack-dev-server": "^5.2.3",
+    "storybook": "^10.3.6",
+    "@storybook/react-webpack5": "^10.3.6",
+    "@storybook/addon-webpack5-compiler-swc": "^4.0.3",
+    "@storybook/addon-a11y": "^10.3.6",
+    "@storybook/addon-docs": "^10.3.6",
+    "eslint-plugin-storybook": "^10.3.6"
   },
   "overrides": {
     "typescript-eslint": {
